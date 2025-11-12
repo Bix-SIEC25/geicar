@@ -1,0 +1,6 @@
+[submodule "raspberryPI4/Pi4_ros2_ws"]
+	path = raspberryPI4/Pi4_ros2_ws
+	url = https://github.com/Bix-SIEC25/Pi4_ros2_ws.git
+[submodule "jetsonNano/Jetson_ros2_ws"]
+	path = jetsonNano/Jetson_ros2_ws
+	url = https://github.com/Bix-SIEC25/Jetson_ros2_ws.git
