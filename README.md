@@ -1,4 +1,16 @@
-# GeiCar Project
+# [BIX] GeiCar Project
+
+This is the main repo of the Bix team's geicar project (*Ehpad Patrol*)
+
+## Specs
+Docs about specific configuration we did on the car
+
+- [fix Pi4's date causing SSL not working](./specs/UpdateTime.md)
+
+## What is GeiCar Project ?
+
+<details>
+<summary>Original repo description (click to expand)</summary>
 
 The GeiCar project is a project carried out by students at [INSA Toulouse](http://www.insa-toulouse.fr/fr/index.html). This project consists in developing the software of a autonomous car in order to carry out different missions. Several projects are exposed on the [official website] (https://sites.google.com/site/projetsecinsa/).
 
@@ -44,3 +56,5 @@ The projects are (or were) surpervised by:
 
 __warning__
 You normally do not need to change firmware running in F103 and F476 boards. You main work is on the raspberry and jetson side.
+
+</details>
