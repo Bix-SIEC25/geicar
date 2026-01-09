@@ -49,6 +49,23 @@ ExecStart=/usr/local/bin/sync_time_from_server.sh
 WantedBy=multi-user.target
 ```
 
+For the jetson we may want to retry several times with longer delay (because of the raspberry's slowness)
+```toml
+[Unit]
+Description=Sync system clock from server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Restart=on-failure
+RestartSec=5
+ExecStart=/usr/local/bin/sync_time_from_server.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
 And to finally start the service, execute 
 ```bash
 sudo systemctl enable --now sync-time.service
